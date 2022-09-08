@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="C:\Users\hp\OneDrive\Desktop\Text_Emotion\TextEmotionClassifier\app\templates\index_styles.css"> -->
+    <title>Text Emotion Detection</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index_style.css'%}">
+</head>
+<body>
+
+    <!-- <h1>Emotion Detector</h1>
+
+    <form action="predict/">
+        <table>
+            <tr>
+                <td>Enter the Sentence</td>
+                <td>
+                    <input type="text" placeholder="Text Here" name="text">
+                </td>
+            </tr>
+        </table>
+    </form> -->
+
+    <div class="split-screen">
+        <div class="left">
+            <section class="copy">
+                <h1>Emotion Detector</h1>
+                <p>Text Emotion Detection using Machine Learning</p>
+            </section>
+        </div>
+        <div class="right">
+            <form action="predict/">
+                <section class="copy">
+                    <h2>I will tell the Emotion of Your Text💻</h2>
+                </section>
+                <div class="input-container name">
+                    <input type="text" placeholder="" name="text">
+                </div>
+                <button class="submit_btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

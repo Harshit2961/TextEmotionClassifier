@@ -1,0 +1,125 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue:#233975;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    /* background-color: #233975; */
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px black;
+}
+.copy p {
+    text-shadow: 0 0 1px var(--primary-blue);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: column;
+}
+.left {
+    height: 200px;
+}
+
+form{
+    padding-bottom: 25%;
+}
+.left .copy {
+    padding-bottom: 25%;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url('Emotions.jpg');
+    background-size: cover;
+}
+.left .copy {
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.left p{
+    font-weight: 400;
+}
+
+.right .copy {
+    color: black;
+    text-align: center;   
+}
+.right .copy p {
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+}
+
+.right form {
+    width: 328;
+}
+
+form input[type="text"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 00.875rem;
+}
+
+.submit_btn {
+    display: block;
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: background-color 0.3s ease-out 100ms;
+}
+.submit_btn:hover {
+    background-color: white;
+    color: var(--primary-blue);
+    border: var(--primary-blue);
+    cursor: pointer;
+    box-shadow: 1px 1px var(--primary-blue);
+
+}
+
+@media screen and (min-width: 900px){
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left, .right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+
